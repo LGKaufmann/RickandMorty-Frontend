@@ -1,0 +1,120 @@
+.detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding: 16px 30px;
+  background: url("../assets/rick-sanchez.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h2 {
+    color: $second-color;
+  }
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+  }
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.detail2 {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  box-shadow: 16px 14px 20px #0000008c;
+  height: 380px;
+  width: 400px;
+  margin-right: 80px;
+  border-radius: 50%;
+  background-color: linear-gradient(90deg, #000, #323232);
+
+  img {
+    height: 370px;
+    width: 390px;
+    z-index: 2;
+    border-radius: 50%;
+
+    @include sm {
+      height: 290px;
+      width: 280px;
+    }
+  }
+
+  @include sm {
+    height: 300px;
+    width: 290px;
+    margin: 0;
+  }
+  @include md {
+    margin: 0;
+  }
+}
+
+.detail2::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-image: conic-gradient($second-color 20deg, transparent 200deg);
+  animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.detail2::after {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+}
+
+.nombres {
+  // background: rgba(255, 122, 89, 0.5);
+  border: 1px solid $second-color;
+  border-radius: 5%;
+  text-align: center;
+  width: 20%;
+
+  h1 {
+    text-align: center;
+    color: $second-color;
+  }
+
+  @include sm {
+    font-size: 10px;
+    display: inline-block;
+    padding: 0px 100px;
+    border: none;
+    outline: auto;
+  }
+  @include md {
+    font-size: 15px;
+    display: inline-block;
+    padding: 0px 100px;
+    border: none;
+    outline: auto;
+    text-align: start;
+  }
+}
+
+.loading {
+  color: $second-color;
+  margin: 0px 600px;
+  padding: 0;
+}

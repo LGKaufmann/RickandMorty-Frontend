@@ -1,0 +1,99 @@
+.navContainer {
+  background-color: $black;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 0px 16px;
+  align-items: center;
+
+  border-bottom: 2px solid $second-color;
+
+  @include sm {
+    flex-direction: column;
+    padding: 16px 0px;
+  }
+
+  @include md {
+    flex-direction: column;
+    padding: 16px 10px;
+  }
+
+  .divLogo {
+    flex: 0;
+    position: relative;
+  }
+
+  .secondSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sm {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include md {
+      width: 100%;
+    }
+
+    @include lg {
+      padding: 16px 0;
+      width: 100%;
+    }
+  }
+
+  .botones {
+    color: $white;
+    background: inherit;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: 1s;
+  }
+
+  .botones:hover {
+    color: $second-color;
+    text-shadow: 0 0 5px $second-color, 0 0 25px $second-color,
+      0 0 50px $second-color, 0 0 100px $second-color;
+  }
+}
+
+.logo {
+  height: 70px;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.wrapperItems {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+
+  .linknav {
+    text-decoration: none;
+    color: $white;
+  }
+
+  .itemnav {
+    font-weight: bold;
+    transition: 1s;
+
+    &:hover {
+      color: $second-color;
+      text-shadow: 0 0 5px $second-color, 0 0 25px $second-color,
+        0 0 50px $second-color, 0 0 100px $second-color;
+    }
+  }
+
+  @include sm {
+    gap: 60px;
+  }
+
+  @include md {
+    gap: 100px;
+  }
+}

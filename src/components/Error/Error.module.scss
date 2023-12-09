@@ -1,0 +1,11 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(29, 33, 36);
+  height: 100vh;
+  border: 5px solid $second-color;
+  h1 {
+    color: $white;
+  }
+}

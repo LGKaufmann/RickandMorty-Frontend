@@ -1,0 +1,75 @@
+.error {
+  color: rgb(255, 3, 3);
+  padding: 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contenedor {
+  min-height: 100vh;
+  background: url("../../../assets/rick-y-morty-como-breaking-bad_3840x2160_xtrafondos.com.jpg")
+    no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.login {
+  width: 320px;
+  height: 420px;
+  background: rgb(253, 175, 34);
+  color: $black;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 85px 30px;
+  border-radius: 3%;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.inputs {
+  width: 100%;
+  margin: 5px 0px;
+  border: none;
+  border-bottom: 3px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background: $black;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 30px 60px;
+  padding: 9px 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.submit:hover {
+  background: gray;
+}

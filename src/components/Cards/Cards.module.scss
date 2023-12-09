@@ -1,0 +1,50 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: space-around;
+  padding: 16px 30px;
+  background: url("../assets/rick-sanchez.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  background: url("../assets/rick-sanchez.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .neon {
+    font-size: 3em;
+    font-weight: 500;
+    font-family: "Croissant One", serif;
+    color: $white;
+    transition: 1s;
+  }
+
+  .neon:hover {
+    color: $second-color;
+    text-shadow: 0 0 5px $second-color, 0 0 25px $second-color,
+      0 0 50px $second-color, 0 0 100px $second-color;
+  }
+}
+
+//padding : arriba - derecha - abajo - izquierda

@@ -1,0 +1,69 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+  height: 310px;
+  width: 250px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4%;
+
+  .name {
+    position: absolute;
+    margin: 220px 10px;
+    background-color: rgb(242, 240, 149);
+    padding: 0px 10px;
+    font-size: 11px;
+  }
+
+  button {
+    position: absolute;
+    margin: 0px 229px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: red;
+  }
+
+  h2 {
+    display: flex;
+    font-size: 16px;
+  }
+}
+
+.contenedor:hover {
+  transform: scale(1.1);
+}
+
+.contenedor2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: $second-color;
+  border-radius: 5%;
+  width: 250px;
+  border-top: 5px solid rgb(56, 142, 73);
+
+  h2 {
+    display: flex;
+    justify-content: space-around;
+    color: $black;
+  }
+}
+
+.imagen {
+  width: 250px;
+  margin-bottom: 0px;
+  border-bottom: 5px solid rgb(56, 142, 73);
+}
+
+.favButton {
+  position: absolute;
+  margin: 0px -230px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}

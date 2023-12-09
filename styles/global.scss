@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: "Croissant One", serif;
+  padding: 0;
+  height: 100vh;
+
+  @include sm {
+    height: 100vh;
+    background: url("../assets/phone.jpg") no-repeat center top;
+    background-size: cover;
+  }
+
+  @include md {
+    height: 100vh;
+    background: url("../assets/phone.jpg") no-repeat center top;
+    background-size: cover;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h2 {
+  font-family: "Croissant One", serif;
+}
+
+button {
+  font-family: "Croissant One", serif;
+}
+
+span {
+  font-family: "Croissant One", serif;
+}

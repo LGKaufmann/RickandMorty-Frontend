@@ -1,0 +1,47 @@
+.busqueda {
+  background-color: $second-color;
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: center;
+  border-radius: 14px;
+
+  .searchbutton {
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    background-color: inherit;
+    right: 0;
+  }
+}
+
+.searchbar {
+  display: flex;
+  gap: 10px;
+
+  .botones {
+    padding: 0;
+    color: $white;
+    background: inherit;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: 1s;
+  }
+
+  .botones:hover {
+    color: $second-color;
+    text-shadow: 0 0 5px $second-color, 0 0 25px $second-color,
+      0 0 50px $second-color, 0 0 100px $second-color;
+  }
+}
+
+input {
+  border: none;
+  background-color: inherit;
+  padding: 0px 5px;
+
+  &:focus {
+    outline: none;
+  }
+}
