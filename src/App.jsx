@@ -23,8 +23,7 @@ const App = () => {
   const login = async (userData) => {
     try {
       const { email, password } = userData;
-      const URL =
-        "https://rickand-morty-backend.vercel.app/rickandmorty/login/";
+      const URL = "rickandmorty-_backend.railway.internal/rickandmorty/login/";
       const { data } = await axios(
         URL + `?email=${email}&password=${password}`
       );
@@ -39,8 +38,7 @@ const App = () => {
 
   const register = async (userData) => {
     try {
-      const URL =
-        "https://rickand-morty-backend.vercel.app/rickandmorty/login/";
+      const URL = "rickandmorty-_backend.railway.internal/rickandmorty/login/";
       const { data } = await axios.post(URL, userData);
       alert(`El usuario ${data.email} ha sido registrado correctamente!`);
       navigate("/");
@@ -60,7 +58,7 @@ const App = () => {
   const onSearch = async (id) => {
     try {
       const { data } = await axios.get(
-        `https://rickand-morty-backend.vercel.app/rickandmorty/character/${id}`
+        `rickandmorty-_backend.railway.internal/rickandmorty/character/${id}`
       );
       if (data.name) {
         const characterexists = characters.filter(
