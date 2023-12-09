@@ -8,7 +8,7 @@ import Detail from "./components/Detail/Detail";
 import Error from "./components/Error/Error";
 import Form from "./components/Form/Form";
 import Favorites from "./components/Favorites/Favorites";
-import Register from "./components/Register/register.jsx";
+import Register from "./components/Register/Register.jsx";
 
 const App = () => {
   const { pathname } = useLocation();
