@@ -11,7 +11,7 @@ import axios from "axios";
 
 export const addFav = (character) => {
   const endpoint =
-    "https://rickandmorty-backend-production-9078.up.railway.app/fav";
+    "https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/fav";
   return async (dispatch) => {
     try {
       const { data } = await axios.post(endpoint, character);
@@ -27,7 +27,7 @@ export const addFav = (character) => {
 
 export const getFav = () => {
   const endpoint =
-    "https://rickandmorty-backend-production-9078.up.railway.app/fav";
+    "https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/fav";
   return async (dispatch) => {
     try {
       const { data } = await axios.get(endpoint);
@@ -43,7 +43,8 @@ export const getFav = () => {
 
 export const removeFav = (id) => {
   const endpoint =
-    "https://rickandmorty-backend-production-9078.up.railway.app/fav" + id;
+    "https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/fav" +
+    id;
   return async (dispatch) => {
     try {
       const { data } = await axios.delete(endpoint);

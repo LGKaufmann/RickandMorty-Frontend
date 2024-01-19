@@ -1,7 +1,6 @@
 import { useState } from "react";
 import validation from "../../utils/validation";
 import style from "./Register.module.scss";
-import imagen from "../../../public/assets/pngegg.png";
 
 const Register = ({ register }) => {
   const [userData, setUserData] = useState({
