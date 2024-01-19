@@ -1,6 +1,7 @@
 import { useState } from "react";
 import validation from "../../utils/validation";
 import style from "./Register.module.scss";
+import imagen from "../../../public/assets/pngegg.png";
 
 const Register = ({ register }) => {
   const [userData, setUserData] = useState({
@@ -30,11 +31,7 @@ const Register = ({ register }) => {
   return (
     <div className={style.contenedor}>
       <div className={style.login}>
-        <img
-          src="../assets/pngegg.png"
-          alt="logo rick and morty"
-          className={style.avatar}
-        />
+        <img src={imagen} alt="logo rick and morty" className={style.avatar} />
         <form onSubmit={handleSubmit}>
           <label htmlFor="email" className={style.label}>
             Email:

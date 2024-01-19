@@ -2,6 +2,7 @@ import { useState } from "react";
 import validation from "../../utils/validation";
 import style from "./Form.module.scss";
 import { Link } from "react-router-dom";
+import imagen from "../../../public/assets/pngegg.png";
 
 const Form = ({ login }) => {
   const [userData, setUserData] = useState({
@@ -31,11 +32,7 @@ const Form = ({ login }) => {
   return (
     <div className={style.contenedor}>
       <div className={style.login}>
-        <img
-          src="../assets/pngegg.png"
-          alt="logo rick and morty"
-          className={style.avatar}
-        />
+        <img src={imagen} alt="logo rick and morty" className={style.avatar} />
         <form onSubmit={handleSubmit}>
           <label htmlFor="email" className={style.label}>
             Email:
