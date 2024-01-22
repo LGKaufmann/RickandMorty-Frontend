@@ -11,7 +11,7 @@ import axios from "axios";
 
 export const addFav = (character) => {
   const endpoint =
-    "https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/fav/";
+    "https://rickandmorty-backend-production-4a2c.up.railway.app/rickandmorty/fav/";
   return async (dispatch) => {
     try {
       const { data } = await axios.post(endpoint, character);
@@ -27,7 +27,7 @@ export const addFav = (character) => {
 
 export const getFav = () => {
   const endpoint =
-    "https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/fav/";
+    "https://rickandmorty-backend-production-4a2c.up.railway.app/rickandmorty/fav/";
   return async (dispatch) => {
     try {
       const { data } = await axios.get(endpoint);
@@ -43,7 +43,7 @@ export const getFav = () => {
 
 export const removeFav = (id) => {
   const endpoint =
-    "https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/fav/" +
+    "https://rickandmorty-backend-production-4a2c.up.railway.app/rickandmorty/fav/" +
     id;
   return async (dispatch) => {
     try {
@@ -61,7 +61,7 @@ export const removeFav = (id) => {
 export const getCharacterDetail = (id) => {
   return function (dispatch) {
     fetch(
-      `https://rickandmorty-backend-production-9078.up.railway.app/rickandmorty/character/${id}`
+      `https://rickandmorty-backend-production-4a2c.up.railway.app/rickandmorty/character/${id}`
     )
       .then((response) => response.json())
       .then((data) => dispatch({ type: GET_CHARACTER_DETAIL, payload: data }));
